@@ -1,0 +1,16 @@
+.container { 
+  display : flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  
+}
+
+
+.grids {
+  height : 100px;
+  width : 100px;
+  border-style : solid;
+  box-sizing: border-box;
+
+}
+
