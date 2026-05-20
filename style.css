@@ -5,7 +5,6 @@
   
 }
 
-
 .grids {
   height : 100px;
   width : 100px;
@@ -16,5 +15,19 @@
 
 .grids:hover {
   background-color: azure;
+  cursor : pointer;
+}
+
+.btn {
+  display:block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: azure;
+
+}
+
+.btn:hover{
+  background-color: rgb(7, 173, 173);
   cursor : pointer;
 }
