@@ -11,10 +11,22 @@ const squares = document.querySelectorAll('.grids');
 
 squares.forEach(square => {
   square.addEventListener('mouseover', () => {
-    square.style.backgroundColor = 'orange'; // change color when hovered
+    square.style.backgroundColor = 'orange'; 
   });
 });
 
+
+function promptSquarePerSide () {
+  const input = prompt("Enter a number for a new square side:")
+  const count = parseInt(input,10);
+
+  if(isNaN(count)){
+    alert('Please enter a valid Number:');
+    return 0;
+  }
+
+  return count;
+};
 
 
 
