@@ -34,5 +34,29 @@ const button = document.createElement('button');
   document.body.insertBefore(button,container);
 
 
-  
+button.addEventListener('click', ()=>{
+  const size = promptSquarePerSide()
+  if(size > 0){
+    const grid = document.querySelector('.grids');
+    container.innerHTML = '';
+    createNewGrid(size)
+    console.log('Generating a '+ size + ' x ' + size + ' grid');
+  }
+});
+
+function createNewGrid(size){
+  let totalSquares = size *  size;
+
+  for (let i = 0; i < totalSquares; i++){
+     const square = document.createElement('div');
+     square.classList.add('grids');
+     square.style.width = (100 / size);
+     square.style.height = (100 / size);
+     container.appendChild(square);
+
+  }
+};
+
+
+
 
