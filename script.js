@@ -8,8 +8,7 @@ for (let i = 0 ; i < 256; i++){
 
 
 const squares = document.querySelectorAll('.grids');
-
-squares.forEach(square => {
+  squares.forEach(square => {
   square.addEventListener('mouseover', () => {
     square.style.backgroundColor = 'orange'; 
   });
@@ -29,5 +28,11 @@ function promptSquarePerSide () {
 };
 
 
+const button = document.createElement('button');
+  button.classList.add('btn');
+  button.textContent = 'Button';
+  document.body.insertBefore(button,container);
 
+
+  
 
