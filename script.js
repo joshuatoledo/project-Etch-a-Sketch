@@ -50,9 +50,16 @@ function createNewGrid(size){
   for (let i = 0; i < totalSquares; i++){
      const square = document.createElement('div');
      square.classList.add('grids');
-     square.style.width = (100 / size);
-     square.style.height = (100 / size);
-     container.appendChild(square);
+     square.style.width = (100 / size)  + '%';
+     square.style.height = (100 / size) + '%';
+     
+
+     squares.forEach(square => {
+      square.addEventListener('mouseover', () => {
+        square.style.backgroundColor = 'orange'; 
+  });
+});
+    container.appendChild(square);
 
   }
 };
