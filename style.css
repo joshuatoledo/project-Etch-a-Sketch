@@ -6,8 +6,8 @@
 }
 
 .grids {
-  height : 100px;
-  width : 100px;
+  height : 960px;
+  width : 960px;
   border-style : solid;
   box-sizing: border-box;
   background-color: gray;
