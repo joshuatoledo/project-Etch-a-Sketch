@@ -44,6 +44,19 @@ button.addEventListener('click', ()=>{
   }
 });
 
+  function randomColor() {
+    const color = '0123456789ABCDEF';
+    let count = '#';
+
+    for (let i = 0 ; i < 6 ; i++){
+      count += color[Math.floor(Math.random() * 16)];
+    }
+    return count;
+  }
+
+
+
+
 function createNewGrid(size){
   let totalSquares = size * size;
 
@@ -53,7 +66,7 @@ function createNewGrid(size){
      squares.style.width = (960 / size)  + 'px';
      squares.style.height = (960 / size) + 'px';
        squares.addEventListener('mouseover', () => {
-        squares.style.backgroundColor = 'orange'; 
+        squares.style.backgroundColor = randomColor(); 
       });
          container.appendChild(squares);
     };
